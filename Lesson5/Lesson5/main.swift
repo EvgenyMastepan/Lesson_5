@@ -43,7 +43,7 @@ if let tempMonth = readLine() {
             case 1,2,12: print("Это зима.")
             case 3...5:  print("Это весна.")
             case 6...8:  print("Это лето.")
-            case 9...11: print("Это зима.")
+            case 9...11: print("Это осень.")
         default: print("Время года неизвестное науке.")
         }
     } else { errorCode = false }
@@ -193,8 +193,8 @@ workCalendar(state: .sunday)
 enum CompassDirection: String {
     case north = "Север — холод и снег"
     case south = "Юг — тепло и солнце"
-    case east = "Восток — рассвет и новая жизнь"
-    case west = "Запад — закат и отдых"
+    case east  = "Восток — рассвет и новая жизнь"
+    case west  = "Запад — закат и отдых"
 }
 
 func directionalRule (directional: CompassDirection) {
