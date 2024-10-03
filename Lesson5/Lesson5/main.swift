@@ -88,7 +88,15 @@ if let operation = readLine() {
     case "+": print(firstNumber + secondNumber)
     case "-": print(firstNumber - secondNumber)
     case "*": print(firstNumber * secondNumber)
-    case "/": print(firstNumber / secondNumber)
+    case " ": print(firstNumber / secondNumber)
+    case "/": do {
+                    if secondNumber == 0 {
+                        errorCode = false
+                        print("На ноль делить нельзя")
+                    } else {
+                        print(firstNumber/secondNumber)
+                    }
+                 }
     default: errorCode = false
     }
 } else { errorCode = false }
