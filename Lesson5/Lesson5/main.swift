@@ -88,7 +88,6 @@ if let operation = readLine() {
     case "+": print(firstNumber + secondNumber)
     case "-": print(firstNumber - secondNumber)
     case "*": print(firstNumber * secondNumber)
-    case " ": print(firstNumber / secondNumber)
     case "/": do {
                     if secondNumber == 0 {
                         errorCode = false
